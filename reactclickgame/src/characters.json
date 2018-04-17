@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "name": "Donut",
+    "clicked": "false",
+    "image":
+      "download.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Bart",
+    "clicked": "false",
+    "image":
+      "bart.png"
+  },
+  {
+    "id": 3,
+    "name": "Grandpa",
+    "clicked": "false",
+    "image":
+      "grandpa.gif"
+  },
+    {
+    "id": 4,
+    "name": "Homer",
+    "clicked": "false",
+    "image":
+      "homer.png"
+  },
+    {
+    "id": 5,
+    "name": "Marge",
+    "clicked": "false",
+    "image":
+      "marge.png"
+  },
+    {
+    "id": 6,
+    "name": "Lisa",
+    "clicked": "false",
+    "image":
+      "Lisa.png"
+  },
+    {
+    "id": 7,
+    "name": "SimpsonsFamily",
+    "clicked": "false",
+    "image":
+      "family.jpeg"
+  },
+    {
+    "id": 8,
+    "name": "HomerBartCar",
+    "clicked": "false",
+    "image":
+      "car.jpeg"
+  },
+    {
+    "id": 9,
+    "name": "RetroSimpsonsFamily",
+    "clicked": "false",
+    "image":
+      "olderimage.png"
+  },
+    {
+    "id": 10,
+    "name": "EvilBart",
+    "clicked": "false",
+    "image":
+      "evilbart.jpeg"
+  },
+    {
+    "id": 11,
+    "name": "BartMoney",
+    "clicked": "false",
+    "image":
+      "bartmoney.jpeg"
+  },
+    {
+    "id": 12,
+    "name": "BartZombie",
+    "clicked": "false",
+    "image":
+      "bartzombie.jpeg"
+  }
+]
