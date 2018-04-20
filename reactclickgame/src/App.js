@@ -1,26 +1,23 @@
 import React, { Component } from "react";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
 import FriendCard from "./components/FriendCard";
 import characters from "./characters.json";
 
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
   state = {
-    characters
+    characters: characters
   };
 
+// The app kept breaking, so I will pseudocode
+// Add State for score and top score
+// Create a function to shuffle the images on the screen
+// Create a function that increases the score (setState) when an image is clicked and calls the function to shuffle the images
+// The function will set the score to zero initially, then it will increase to 1 point if the user clicks on a card
+// If the user's clicks on the same image, then the score will go back to zero
+// but the score will be saved in highest score if it is higher than the current highest score
 
 
-  clickedCard = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const characters = this.state.characters.filter(character => character.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ characters });
-  };
-
-  // Map over this.state.friends and render a FriendCard component for each friend object
   render() {
     return (
       <Wrapper>
@@ -39,19 +36,22 @@ class App extends Component {
       </div>
     </div>
   </div>
-        <Title>Game Time!</Title>
+  <div className="container characters">
         {this.state.characters.map(character => (
           <FriendCard
-            removeFriend={this.removeFriend}
             id={character.id}
             key={character.id}
             name={character.name}
             image={character.image}
+            clicked={character.clicked}
           />
         ))}
+        </div>
+
       </Wrapper>
     );
   }
-}
+  }
+
 
 export default App;
