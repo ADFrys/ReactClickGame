@@ -3,7 +3,6 @@ import "./FriendCard.css";
 
 
 const FriendCard = props => {
-console.log(props);
 
 
 // Attempted to create a click function that passes in props.clicked and sets the property to that image to true
@@ -16,7 +15,7 @@ return (
 
   <div className="card">
     <div className="img-container">
-      <img onClick={props.clicked} id={props.name} src={require("../../images/" + props.image)} />
+      <img onClick={() => props.clicked(props)} id={props.name} src={require("../../images/" + props.image)} />
     </div>
     <div className="content">
 
